@@ -11,3 +11,10 @@ Ex 1 -
         2. Crie um Aluno de 21 anos, e faça ele IrParaEscola, Cumprimentar e DizerIdade;
         3. Crie um Professor de 30 anos, e faça ele Cumprimentar, DizerIdade e Explicar sobre um determinado assunto.
         
+ Ex 2 - 
+        Realize a implementação utilizando classe abstrata.
+
+        Vide Diagrama no repositório do módulo
+        
+        Repositório.
+        
