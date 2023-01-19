@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Exercicio_2
+namespace Exercicio_2.Models
 {
-    public class Iphone: Smartphone
+    public class Iphone : Smartphone
     {
         public Iphone(string numeroTel, string modelo, string imei, int memoria) : base(numeroTel, modelo, imei, memoria)
         {
-            this.Modelo = "IPHONE " + modelo;
+            Modelo = "IPHONE " + modelo;
         }
         public override void InstalarAplicativo(string nome)
         {
@@ -21,7 +21,7 @@ namespace Exercicio_2
         public override void Inicializar()
         {
             Console.WriteLine("Bem vindo ao IOS!\n");
-           
+
         }
     }
 }

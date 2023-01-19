@@ -5,11 +5,11 @@ using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Exercicio_2
+namespace Exercicio_2.Models
 {
     public abstract class Smartphone
     {
-        public string NumeroTel {get; private set;}
+        public string NumeroTel { get; private set; }
         public string Modelo { get; protected set; }
         protected string Imei { get; private set; }
         protected int Memoria { get; private set; }
@@ -35,7 +35,7 @@ namespace Exercicio_2
             Console.WriteLine("\nLigação Recebida!\n");
             Console.WriteLine("[1]Atender\n[2]Desligar");
             string chamada = Console.ReadLine();
-            switch(chamada) 
+            switch (chamada)
             {
                 case "1":
                     Console.WriteLine("Chamada atendida... Fale\n");
@@ -67,42 +67,42 @@ namespace Exercicio_2
 
         public string Menu()
         {
-                Console.WriteLine($"Escolha o que deseja fazer:\n ");
-                Console.WriteLine("[1] - Ligação");
-                Console.WriteLine("[2] - Receber Ligação");
-                Console.WriteLine("[3] - Instalar Aplicativos");
-                Console.WriteLine("[4] - Sobre");
-                Console.WriteLine("[5] - Desligar");
-                string escolha = Console.ReadLine();
+            Console.WriteLine($"Escolha o que deseja fazer:\n ");
+            Console.WriteLine("[1] - Ligação");
+            Console.WriteLine("[2] - Receber Ligação");
+            Console.WriteLine("[3] - Instalar Aplicativos");
+            Console.WriteLine("[4] - Sobre");
+            Console.WriteLine("[5] - Desligar");
+            string escolha = Console.ReadLine();
 
-                return escolha;
+            return escolha;
 
         }
 
         public void Operacoes(string escolha)
         {
-            
-                switch (escolha)
-                {
-                    case "1":
-                        Ligar();
-                        break;
-                    case "2":
-                        ReceberLigacao();
-                        break;
-                    case "3":
-                        Console.Write("Pesquisar: \n");
-                        string nomeapp = Console.ReadLine();
-                        InstalarAplicativo(nomeapp);
-                        break;
-                    case "4":
-                        Console.WriteLine($"\nNúmero Celular: {NumeroTel}");
-                        Console.WriteLine($"Modelo: {Modelo}");
-                        Console.WriteLine($"IMEI: {Imei}");
-                        Console.WriteLine($"Memória: {Memoria}GB\n");
-                        break;
-                }
-           
+
+            switch (escolha)
+            {
+                case "1":
+                    Ligar();
+                    break;
+                case "2":
+                    ReceberLigacao();
+                    break;
+                case "3":
+                    Console.Write("Pesquisar: \n");
+                    string nomeapp = Console.ReadLine();
+                    InstalarAplicativo(nomeapp);
+                    break;
+                case "4":
+                    Console.WriteLine($"\nNúmero Celular: {NumeroTel}");
+                    Console.WriteLine($"Modelo: {Modelo}");
+                    Console.WriteLine($"IMEI: {Imei}");
+                    Console.WriteLine($"Memória: {Memoria}GB\n");
+                    break;
+            }
+
         }
     }
 }

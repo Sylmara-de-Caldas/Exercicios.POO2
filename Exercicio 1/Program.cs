@@ -1,4 +1,6 @@
-﻿namespace Exercicio_1
+﻿using Exercicio_1.Models;
+
+namespace Exercicio_1
 {
     internal class Program
     {

@@ -1,4 +1,5 @@
 ﻿using System.Xml;
+using Exercicio_2.Models;
 
 namespace Exercicio_2
 {

@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Exercicio_2
+namespace Exercicio_2.Models
 {
-    public class Motorola:Smartphone
+    public class Motorola : Smartphone
     {
         public Motorola(string numeroTel, string modelo, string imei, int memoria) : base(numeroTel, modelo, imei, memoria)
         {
-            this.Modelo = "MOTOROLA " + modelo;
+            Modelo = "MOTOROLA " + modelo;
 
         }
         public override void InstalarAplicativo(string nome)
@@ -22,7 +22,7 @@ namespace Exercicio_2
         public override void Inicializar()
         {
             Console.WriteLine("Bem vindo ao ANDROID!\n");
-     
+
         }
     }
 }
