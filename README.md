@@ -1,4 +1,4 @@
-# Resolução dos exercícios do curso de Programação Orientadada à Objetos II - Ministrado pela ADA
+### Resolução dos exercícios do curso de Programação Orientadada à Objetos II - Ministrado pela ADA
 
 Ex 1 - 
         Escreva um programa orientado a objetos com as seguintes características:
@@ -18,3 +18,20 @@ Ex 1 -
         
         Repositório.
         
+Ex 3 - 
+        Dadas as classes base no diagrama abaixo, criar as classes para os seguintes animais: leão, chacal, morcego, cisne, arara, dragão de comodo, lontra, pinguim,             coruja, elefante e jacaré. Deve estar adequado também o cadastro de um ornitorrinco.
+
+        Lembre-se de verificar as características de cada animal, por exemplo, um réptil que seja aquático E terrestre, etc.
+
+        Diagrama Animais.
+
+Ex 4 - 
+        Crie uma aplicação Console que contenha uma cópia da classe abaixo.
+
+        Classe Student.
+        
+        1. Em seguida, na classe Program, crie um método chamado DisplayPublicProperties que, usando Reflection, exiba todas as Propriedades Públicas da classe Student. No método Main da classe Program, coloque uma chamada para o método DisplayPublicProperties.
+        2. Agora, adicione na classe Program um outro método chamado CreateInstance que
+        Use Reflection para criar uma instância (objeto) da classe Student e, em seguida;
+        Use Reflection para preencher as propriedades públicas do objeto. Não é necessário se preocupar com a adição de novas propriedades, isto é, sempre serão preenchidos apenas o Name, University e RollNumber.
+        3. Use Reflection para chamar o método DisplayInfo do objeto criado no item 2.1.
